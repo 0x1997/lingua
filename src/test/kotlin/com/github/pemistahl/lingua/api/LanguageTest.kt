@@ -84,6 +84,7 @@ import com.github.pemistahl.lingua.api.Language.TAGALOG
 import com.github.pemistahl.lingua.api.Language.TAMIL
 import com.github.pemistahl.lingua.api.Language.TELUGU
 import com.github.pemistahl.lingua.api.Language.THAI
+import com.github.pemistahl.lingua.api.Language.TIBETAN
 import com.github.pemistahl.lingua.api.Language.TIGRINYA
 import com.github.pemistahl.lingua.api.Language.TSONGA
 import com.github.pemistahl.lingua.api.Language.TSWANA
@@ -91,6 +92,7 @@ import com.github.pemistahl.lingua.api.Language.TURKISH
 import com.github.pemistahl.lingua.api.Language.UKRAINIAN
 import com.github.pemistahl.lingua.api.Language.UNKNOWN
 import com.github.pemistahl.lingua.api.Language.URDU
+import com.github.pemistahl.lingua.api.Language.UYGHUR
 import com.github.pemistahl.lingua.api.Language.VIETNAMESE
 import com.github.pemistahl.lingua.api.Language.WELSH
 import com.github.pemistahl.lingua.api.Language.XHOSA
@@ -114,8 +116,8 @@ class LanguageTest {
             FINNISH, FRENCH, GANDA, GEORGIAN, GERMAN, GREEK, GUJARATI, HEBREW, HINDI, HUNGARIAN, ICELANDIC, INDONESIAN,
             IRISH, ITALIAN, JAPANESE, KAZAKH, KOREAN, LATIN, LATVIAN, LITHUANIAN, MACEDONIAN, MALAY, MAORI,
             MARATHI, MONGOLIAN, NYNORSK, OROMO, PERSIAN, POLISH, PORTUGUESE, PUNJABI, ROMANIAN, RUSSIAN, SERBIAN, SHONA,
-            SINHALA, SLOVAK, SLOVENE, SOMALI, SOTHO, SPANISH, SWAHILI, SWEDISH, TAGALOG, TAMIL, TELUGU, THAI, TIGRINYA,
-            TSONGA, TSWANA, TURKISH, UKRAINIAN, URDU, VIETNAMESE, WELSH, XHOSA, YORUBA, ZULU
+            SINHALA, SLOVAK, SLOVENE, SOMALI, SOTHO, SPANISH, SWAHILI, SWEDISH, TAGALOG, TAMIL, TELUGU, THAI, TIBETAN,
+            TIGRINYA, TSONGA, TSWANA, TURKISH, UKRAINIAN, URDU, UYGHUR, VIETNAMESE, WELSH, XHOSA, YORUBA, ZULU
         )
     }
 
@@ -127,14 +129,14 @@ class LanguageTest {
             FINNISH, FRENCH, GANDA, GEORGIAN, GERMAN, GREEK, GUJARATI, HEBREW, HINDI, HUNGARIAN, ICELANDIC, INDONESIAN,
             IRISH, ITALIAN, JAPANESE, KAZAKH, KOREAN, LATVIAN, LITHUANIAN, MACEDONIAN, MALAY, MAORI, MARATHI, MONGOLIAN,
             NYNORSK, OROMO, PERSIAN, POLISH, PORTUGUESE, PUNJABI, ROMANIAN, RUSSIAN, SERBIAN, SHONA, SINHALA, SLOVAK,
-            SLOVENE, SOMALI, SOTHO, SPANISH, SWAHILI, SWEDISH, TAGALOG, TAMIL, TELUGU, THAI, TIGRINYA, TSONGA, TSWANA,
-            TURKISH, UKRAINIAN, URDU, VIETNAMESE, WELSH, XHOSA, YORUBA, ZULU
+            SLOVENE, SOMALI, SOTHO, SPANISH, SWAHILI, SWEDISH, TAGALOG, TAMIL, TELUGU, THAI, TIBETAN, TIGRINYA, TSONGA,
+            TSWANA, TURKISH, UKRAINIAN, URDU, UYGHUR, VIETNAMESE, WELSH, XHOSA, YORUBA, ZULU
         )
     }
 
     @Test
     fun `assert that certain languages support Arabic script`() {
-        assertThat(Language.allWithArabicScript()).containsExactly(ARABIC, PERSIAN, URDU)
+        assertThat(Language.allWithArabicScript()).containsExactly(ARABIC, PERSIAN, URDU, UYGHUR)
     }
 
     @Test
@@ -274,7 +276,7 @@ class LanguageTest {
     }
 
     private fun filteredLanguagesProvider() = listOf(
-        arguments(Alphabet.ARABIC, listOf(ARABIC, PERSIAN, URDU)),
+        arguments(Alphabet.ARABIC, listOf(ARABIC, PERSIAN, URDU, UYGHUR)),
         arguments(Alphabet.ARMENIAN, listOf(ARMENIAN)),
         arguments(Alphabet.BENGALI, listOf(BENGALI)),
         arguments(

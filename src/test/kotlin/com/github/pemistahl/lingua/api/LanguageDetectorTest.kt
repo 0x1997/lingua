@@ -67,12 +67,14 @@ import com.github.pemistahl.lingua.api.Language.SPANISH
 import com.github.pemistahl.lingua.api.Language.SWAHILI
 import com.github.pemistahl.lingua.api.Language.SWEDISH
 import com.github.pemistahl.lingua.api.Language.TAGALOG
+import com.github.pemistahl.lingua.api.Language.TIBETAN
 import com.github.pemistahl.lingua.api.Language.TSONGA
 import com.github.pemistahl.lingua.api.Language.TSWANA
 import com.github.pemistahl.lingua.api.Language.TURKISH
 import com.github.pemistahl.lingua.api.Language.UKRAINIAN
 import com.github.pemistahl.lingua.api.Language.UNKNOWN
 import com.github.pemistahl.lingua.api.Language.URDU
+import com.github.pemistahl.lingua.api.Language.UYGHUR
 import com.github.pemistahl.lingua.api.Language.VIETNAMESE
 import com.github.pemistahl.lingua.api.Language.WELSH
 import com.github.pemistahl.lingua.api.Language.XHOSA
@@ -537,7 +539,8 @@ class LanguageDetectorTest {
         "ਮੋਟਰਸਾਈਕਲਾਂ, PUNJABI",
         "துன்பங்களை, TAMIL",
         "కృష్ణదేవరాయలు, TELUGU",
-        "ในทางหลวงหมายเลข, THAI"
+        "ในทางหลวงหมายเลข, THAI",
+        "འདི, TIBETAN"
     )
     fun `assert that language of single word with unique alphabet can be unambiguously identified with rules`(
         word: String,
@@ -557,7 +560,7 @@ class LanguageDetectorTest {
     private fun filteredLanguagesProvider() = listOf(
         arguments(
             "والموضوع",
-            listOf(ARABIC, PERSIAN, URDU)
+            listOf(ARABIC, PERSIAN, URDU, UYGHUR)
         ),
         arguments(
             "сопротивление",

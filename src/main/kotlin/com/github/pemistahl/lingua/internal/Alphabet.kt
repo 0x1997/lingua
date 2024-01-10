@@ -40,6 +40,7 @@ internal enum class Alphabet {
     TAMIL,
     TELUGU,
     THAI,
+    TIBETAN,
     NONE;
 
     private val script: UnicodeScript? = try {

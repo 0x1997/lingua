@@ -54,6 +54,11 @@ enum class IsoCode639_1 {
     BG,
 
     /**
+     * The ISO 639-1 code for [Tibetan][Language.TIBETAN].
+     */
+    BO,
+
+    /**
      * The ISO 639-1 code for [Bengali][Language.BENGALI].
      */
     BN,
@@ -387,6 +392,11 @@ enum class IsoCode639_1 {
      * The ISO 639-1 code for [Ukrainian][Language.UKRAINIAN].
      */
     UK,
+
+    /**
+     * The ISO 639-1 code for [Uyghur][Language.UYGHUR].
+     */
+    UG,
 
     /**
      * The ISO 639-1 code for [Urdu][Language.URDU].

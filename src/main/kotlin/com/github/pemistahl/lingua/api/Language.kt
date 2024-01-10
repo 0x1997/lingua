@@ -23,6 +23,7 @@ import com.github.pemistahl.lingua.api.IsoCode639_1.AZ
 import com.github.pemistahl.lingua.api.IsoCode639_1.BE
 import com.github.pemistahl.lingua.api.IsoCode639_1.BG
 import com.github.pemistahl.lingua.api.IsoCode639_1.BN
+import com.github.pemistahl.lingua.api.IsoCode639_1.BO
 import com.github.pemistahl.lingua.api.IsoCode639_1.BS
 import com.github.pemistahl.lingua.api.IsoCode639_1.CA
 import com.github.pemistahl.lingua.api.IsoCode639_1.CS
@@ -88,6 +89,7 @@ import com.github.pemistahl.lingua.api.IsoCode639_1.TL
 import com.github.pemistahl.lingua.api.IsoCode639_1.TN
 import com.github.pemistahl.lingua.api.IsoCode639_1.TR
 import com.github.pemistahl.lingua.api.IsoCode639_1.TS
+import com.github.pemistahl.lingua.api.IsoCode639_1.UG
 import com.github.pemistahl.lingua.api.IsoCode639_1.UK
 import com.github.pemistahl.lingua.api.IsoCode639_1.UR
 import com.github.pemistahl.lingua.api.IsoCode639_1.VI
@@ -101,6 +103,7 @@ import com.github.pemistahl.lingua.api.IsoCode639_3.ARA
 import com.github.pemistahl.lingua.api.IsoCode639_3.AZE
 import com.github.pemistahl.lingua.api.IsoCode639_3.BEL
 import com.github.pemistahl.lingua.api.IsoCode639_3.BEN
+import com.github.pemistahl.lingua.api.IsoCode639_3.BOD
 import com.github.pemistahl.lingua.api.IsoCode639_3.BOS
 import com.github.pemistahl.lingua.api.IsoCode639_3.BUL
 import com.github.pemistahl.lingua.api.IsoCode639_3.CAT
@@ -167,6 +170,7 @@ import com.github.pemistahl.lingua.api.IsoCode639_3.TIR
 import com.github.pemistahl.lingua.api.IsoCode639_3.TSN
 import com.github.pemistahl.lingua.api.IsoCode639_3.TSO
 import com.github.pemistahl.lingua.api.IsoCode639_3.TUR
+import com.github.pemistahl.lingua.api.IsoCode639_3.UIG
 import com.github.pemistahl.lingua.api.IsoCode639_3.UKR
 import com.github.pemistahl.lingua.api.IsoCode639_3.URD
 import com.github.pemistahl.lingua.api.IsoCode639_3.VIE
@@ -265,12 +269,14 @@ enum class Language(
     TAMIL(TA, TAM, enumSetOf(Alphabet.TAMIL), null),
     TELUGU(TE, TEL, enumSetOf(Alphabet.TELUGU), null),
     THAI(TH, THA, enumSetOf(Alphabet.THAI), null),
+    TIBETAN(BO, BOD, enumSetOf(Alphabet.TIBETAN), null),
     TIGRINYA(TI, TIR, enumSetOf(Alphabet.ETHIOPIC), null),
     TSONGA(TS, TSO, enumSetOf(Alphabet.LATIN), null),
     TSWANA(TN, TSN, enumSetOf(Alphabet.LATIN), null),
     TURKISH(TR, TUR, enumSetOf(Alphabet.LATIN), null),
     UKRAINIAN(UK, UKR, enumSetOf(CYRILLIC), "ҐґЄєЇї"),
     URDU(UR, URD, enumSetOf(Alphabet.ARABIC), null),
+    UYGHUR(UG, UIG, enumSetOf(Alphabet.ARABIC), ""),
     VIETNAMESE(
         VI,
         VIE,

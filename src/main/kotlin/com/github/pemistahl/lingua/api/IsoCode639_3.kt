@@ -54,6 +54,11 @@ enum class IsoCode639_3 {
     BEN,
 
     /**
+     * The ISO 639-3 code for [Tibetan][Language.TIBETAN].
+     */
+    BOD,
+
+    /**
      * The ISO 639-3 code for [Bosnian][Language.BOSNIAN].
      */
     BOS,
@@ -382,6 +387,11 @@ enum class IsoCode639_3 {
      * The ISO 639-3 code for [Turkish][Language.TURKISH].
      */
     TUR,
+
+    /**
+     * The ISO 639-3 code for [Uyghur][Language.UYGHUR].
+     */
+    UIG,
 
     /**
      * The ISO 639-3 code for [Ukrainian][Language.UKRAINIAN].
